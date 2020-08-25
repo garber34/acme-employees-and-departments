@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  min-width: 264px;
+}
+h1, h1+h4{
+  text-align: center;
+  color: white;
+
+}
+
+.flexcontainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexcontainer>div{
+  background-color: bisque;
+  padding: 1rem;
+  margin: 1rem;
+  flex: 1 1 1;
+  max-width: 15%;
+
+}
+
+button{
+  width: 100%;
+}
+
+@media(max-width:1068px){
+  .flexcontainer{
+    display: block;
+
+  }
+
+  .flexcontainer>div{
+    background-color: bisque;
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 100%;
+
+  }
+
+  .buttonPanel{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h3{
+    text-align: center;
+  }
+
+}
